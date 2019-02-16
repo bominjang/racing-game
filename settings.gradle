@@ -1,2 +1,3 @@
 rootProject.name = 'racingGame'
+include 'racing-game'
 
