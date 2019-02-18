@@ -18,6 +18,16 @@ public class CarTest {
         car.attemptToMove(new FixedNumberGenerator().generateNumber(numberOfAttempt));
 
         //then
-        assertEquals(car.getLocation(),3);
+        assertEquals(car.converter(),"---");
+    }
+
+    @Test
+    public void 일곱번_시도했을때_4칸전진() {
+        Car car = new Car();
+        int numberOfAttempt = 7;
+
+        car.attemptToMove(new FixedNumberGenerator().generateNumber(numberOfAttempt));
+
+        assertEquals(car.converter(),"----");
     }
 }

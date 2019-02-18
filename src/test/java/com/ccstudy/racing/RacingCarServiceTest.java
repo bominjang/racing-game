@@ -20,10 +20,10 @@ public class RacingCarServiceTest {
     }
 
     private void check(Car car) {
-        assertTrue(checkNumber(car.getLocation()));
+        assertTrue(checkLength(car.converter()));
     }
 
-    private boolean checkNumber(int number) {
-        return number < 6 && number > 0;
+    private boolean checkLength(String convert) {
+        return convert.length() < 6 && convert.length() >= 0;
     }
 }

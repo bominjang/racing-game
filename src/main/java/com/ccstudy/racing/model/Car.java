@@ -19,4 +19,12 @@ public class Car {
     public int getLocation(){
         return this.location;
     }
+
+    public String converter() {
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0 ; i < location ; i++) {
+            builder.append("-");
+        }
+        return builder.toString();
+    }
 }

@@ -1,6 +1,5 @@
 package com.ccstudy.racing;
 
-import com.ccstudy.racing.common.RacingResultConverter;
 import com.ccstudy.racing.model.Car;
 
 import java.util.List;
@@ -22,7 +21,7 @@ public class RacingCarController {
         List<Car> cars = racingCarService.race(countOfCar, numberOfAttempt);
 
         for (Car car : cars) {
-            System.out.println(RacingResultConverter.convert(car));
+            System.out.println(car.converter());
         }
     }
 
