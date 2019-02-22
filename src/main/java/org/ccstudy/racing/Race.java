@@ -32,17 +32,9 @@ public class Race {
 
     public void addPosition() {
         for (Car car : cars)
-            status.add(drawPosition(car));
+            status.add(car.drawPosition());
     }
 
-    private String drawPosition(Car car) {
-        String position = "";
-        for (int i = 0; i < car.getPosition(); i++) {
-            position = position + "-";
-        }
-        System.out.println(position);
-        return position;
-    }
 
     private void setCars(final int numberOfCars) {
         for (int i = 0; i < numberOfCars; i++)

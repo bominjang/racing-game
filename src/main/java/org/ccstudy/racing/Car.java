@@ -15,7 +15,15 @@ public class Car {
             this.position++;
     }
 
-    public int getPosition(){
+    public String drawPosition() {
+        String now = "";
+        for (int i = 0; i < this.position; i++)
+            now += "-";
+        System.out.println(now);
+        return now;
+    }
+
+    public int getPosition() {
         return this.position;
     }
 }

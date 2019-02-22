@@ -33,4 +33,13 @@ public class RaceTest {
         assertEquals(expect, race.getStatus());
     }
 
+    @Test
+    public void 두칸전진차량결과확인() {
+        Car car = new Car();
+        car.foward(5);
+        car.foward(5);
+        assertEquals(2, car.getPosition());
+
+        assertEquals("---", car.drawPosition());
+    }
 }
