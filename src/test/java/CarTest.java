@@ -1,41 +1,33 @@
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-
-import static org.hamcrest.core.Is.is;
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 public class CarTest {
-    private Car car;
-
-    @Before
-    public void setUp() throws Exception {
-        car = new Car();
-    }
-
-    @After
-    public void tearDown() throws Exception {
-    }
 
     @Test
-    public void drawRacing() {
-        car.repeatUpTo(5);
-        assertThat(car.drawRacingRoad(), is("====="));
-    }
-
-    @Test
-    public void testUpdate() throws Exception{
+    public void 전진() {
         Car car = new Car();
-        Method method = car.getClass().getDeclaredMethod("updateLocationAccordingTo", int.class);
-        Field field = car.getClass().getDeclaredField("location");
+        car.move(5);
+        int result = car.getLocation();
+        assertThat(result, is(1));
+    }
 
-        method.setAccessible(true);
-        field.setAccessible(true);
-        method.invoke(car, 6);
+    @Test
+    public void 멈춤() {
+        Car car = new Car();
+        car.move(3);
+        int result = car.getLocation();
+        assertThat(result, is(0));
+    }
 
-        assertThat(field.get(car), is(1));
+    @Test
+    public void 다섯번전진후_이동거리출력() {
+        Car car = new Car();
+        for(int i=0; i<5; i++){
+            car.move(5);
+        }
+        String result = car.drawRacingRoad();
+        assertThat(result, is("====="));
     }
 }

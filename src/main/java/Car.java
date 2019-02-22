@@ -6,21 +6,10 @@ public class Car {
         location = 0;
     }
 
-    public void repeatUpTo(int tryCount) {
-        for (int i = 0; i < tryCount; i++) {
-            int randomNum = generateRandomInt();
-            updateLocationAccordingTo(randomNum);
-        }
-    }
-
-    private void updateLocationAccordingTo(int randomNum) {
-        if (randomNum >= CONDITION_NUMBER) {
+    public void move(int num) {
+        if (num >= CONDITION_NUMBER) {
             location++;
         }
-    }
-
-    private int generateRandomInt(){
-        return (int) (Math.random() * 10);
     }
 
     public String drawRacingRoad() {
@@ -31,4 +20,7 @@ public class Car {
         return stringBuilder.toString();
     }
 
+    public int getLocation() {
+        return location;
+    }
 }

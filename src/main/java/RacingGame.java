@@ -1,36 +1,23 @@
-import java.util.ArrayList;
 import java.util.List;
 
 public class RacingGame {
-    private List<Car> cars;
-    private int times;
+    private int tryTimes;
 
-    public RacingGame(){
-        this.cars = new ArrayList<>();
-    }
-
-    public void init(int numCar, int tryCount){
-        this.times = tryCount;
-        for(int i=0; i<numCar; i++){
-            cars.add(new Car());
+    public void start(int tryTimes, List<Car> cars) {
+        for (int i=0; i<tryTimes; i++) {
+            repeat(cars);
         }
     }
 
-    public void start(){
+    public void repeat(List<Car> cars) {
         for(Car car: cars){
-            car.repeatUpTo(times);
+            car.move(new NumberGenerator().generateRandomNumber());
         }
     }
 
-    public void print(){
-        for(Car car: cars){
+    public void print(List<Car> cars) {
+        for (Car car : cars) {
             System.out.println(car.drawRacingRoad());
         }
     }
-
-    public List<Car> getCars() {
-        return cars;
-    }
-
-
 }
