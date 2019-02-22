@@ -8,9 +8,10 @@ public class RacingGame {
         return cars;
     }
 
-    public void repeat(List<Car> cars) {
+    public List<Car> repeat(List<Car> cars) {
         for(Car car: cars){
             car.move(new NumberGenerator().generateRandomNumber());
         }
+        return cars;
     }
 }

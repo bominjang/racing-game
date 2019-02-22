@@ -13,7 +13,7 @@ public class Demo {
         for(int i=0; i<numberOfCars; i++) {
             cars.add(new Car());
         }
-        game.start(tryTimes, cars);
+        game.race(tryTimes, cars);
 
         for(Car car: cars){
             System.out.println(car.drawRacingRoad());

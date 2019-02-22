@@ -9,16 +9,16 @@ public class CarTest {
     public void 숫자4이상이주어지면_한칸전진() {
         Car car = new Car();
         car.move(5);
-        int result = car.getLocation();
-        assertThat(result, is(1));
+        String result = car.drawRacingRoad();
+        assertThat(result, is("="));
     }
 
     @Test
     public void 숫자4미만이주어지면_이동안함() {
         Car car = new Car();
         car.move(3);
-        int result = car.getLocation();
-        assertThat(result, is(0));
+        String result = car.drawRacingRoad();
+        assertThat(result, is(""));
     }
 
     @Test

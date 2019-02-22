@@ -19,8 +19,4 @@ public class Car {
         }
         return stringBuilder.toString();
     }
-
-    public int getLocation() {
-        return location;
-    }
 }
