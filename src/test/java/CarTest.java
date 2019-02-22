@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 public class CarTest {
 
     @Test
-    public void 전진() {
+    public void 숫자4이상이주어지면_한칸전진() {
         Car car = new Car();
         car.move(5);
         int result = car.getLocation();
@@ -14,7 +14,7 @@ public class CarTest {
     }
 
     @Test
-    public void 멈춤() {
+    public void 숫자4미만이주어지면_이동안함() {
         Car car = new Car();
         car.move(3);
         int result = car.getLocation();
