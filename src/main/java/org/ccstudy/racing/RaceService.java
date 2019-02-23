@@ -9,21 +9,23 @@ public class RaceService {
 
     private static final String SPLIT_REGEX = ",";
     private static final String APPEND_REGEX = ", ";
+    private static final String LINE_CHANGE = "\n";
 
-    public void run(final String carNames, final int times) {
+    public String run(final String carNames, final int times) {
         final List<Car> cars = makeCars(carNames);
         for (int i = 0; i < times; i++) {
-            tryForward(cars);
+            tryForwardAllCars(cars);
         }
-        result(cars);
+        return getResult(cars);
     }
 
-    public void result(List<Car> cars) {
-        for (Car car : cars){
-            car.drawPosition();
+    public String getResult(List<Car> cars) {
+        String result = "";
+        for (Car car : cars) {
+            result += car.getPositionToString() + LINE_CHANGE;
         }
         final List<Car> winCars = getWinCars(cars);
-        System.out.println(getWinnersName(winCars) + "가 최종 우승하였습니다.");
+        return result + getWinnersName(winCars) + "가 최종 우승했습니다.";
     }
 
     private List<Car> getWinCars(List<Car> cars) {
@@ -38,14 +40,14 @@ public class RaceService {
     private List<Car> makeCars(final String carNames) {
         List<Car> cars = new ArrayList<>();
         final String[] nameArray = carNames.split(SPLIT_REGEX);
-        for(String carName : nameArray){
+        for (String carName : nameArray) {
             cars.add(new Car(carName));
         }
         return cars;
     }
 
-    private void tryForward(List<Car> cars) {
-        for (Car car : cars){
+    private void tryForwardAllCars(List<Car> cars) {
+        for (Car car : cars) {
             car.foward(NumberGenerator.generateRandomNumber());
         }
     }

@@ -17,18 +17,12 @@ public class Car {
             this.position++;
     }
 
-    public void drawPosition() {
-        String now = "";
-        for (int i = 0; i < this.position; i++)
-            now += "-";
-        System.out.println(this.name + " : " + now);
-    }
-
     public String getPositionToString() {
         String now = "";
-        for (int i = 0; i < this.position; i++)
+        for (int i = 0; i < this.position; i++) {
             now += "-";
-        return now;
+        }
+        return this.name + " : " + now;
     }
 
     public String getName() {

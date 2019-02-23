@@ -29,7 +29,7 @@ public class RaceServiceTest {
 
     @Test
     public void 난수발생레이스결과() {
-        raceService.run(CAR_NAMES, TIMES);
+        System.out.println(raceService.run(CAR_NAMES, TIMES));
     }
 
     @Test

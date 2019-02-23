@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c86fef04-5dbf-456a-b143-5f5f3d5c409f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/org/ccstudy/racing/Race.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/org/ccstudy/racing/RaceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/RaceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/RaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/RaceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -35,12 +33,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="java" value="2888" />
+          <entry key="java" value="3194" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2888" />
+          <entry key="JAVA" value="3194" />
           <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
@@ -51,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            <state relative-caret-position="289">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="e#701#702#0" expanded="true" />
                 <element signature="e#733#734#0" expanded="true" />
@@ -75,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/ccstudy/racing/RaceService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+            <state relative-caret-position="297">
+              <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -84,11 +82,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+            <state relative-caret-position="306">
+              <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
               <folding>
-                <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
+                <element signature="e#648#649#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -398,10 +396,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Race.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/RaceService.java" />
       </list>
     </option>
@@ -529,7 +527,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550940511697" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550941264558" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DS/sketch" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -621,23 +619,11 @@
       <updated>1550666386903</updated>
       <workItem from="1550666399196" duration="6604000" />
       <workItem from="1550816212827" duration="1921000" />
-      <workItem from="1550902057719" duration="10378000" />
+      <workItem from="1550902057719" duration="11135000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 01h 19m 38s.xml">
-      <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 01h 19m 42s.xml">
-      <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 01h 19m 46s.xml">
-      <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 01h 19m 49s.xml">
-      <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 01h 19m 52s.xml">
       <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
     </history-entry>
@@ -656,9 +642,21 @@
     <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 01h 47m 56s.xml">
       <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 01h 48m 31s.xml">
+      <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 01h 48m 34s.xml">
+      <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 01h 58m 48s.xml">
+      <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 02h 00m 17s.xml">
+      <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13344000" />
+    <option name="totallyTimeSpent" value="14101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -710,10 +708,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+          <folding>
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="289">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="e#701#702#0" expanded="true" />
             <element signature="e#733#734#0" expanded="true" />
@@ -723,21 +732,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding>
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ccstudy/racing/RaceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        <state relative-caret-position="297">
+          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
         </state>
       </provider>
     </entry>
