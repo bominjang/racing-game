@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 public class Race {
 
     private static final String REGEX = ",";
+    private static final String APPEND_REGEX = ", ";
 
     private int times;
     private List<Car> cars;
@@ -57,8 +58,8 @@ public class Race {
     private String getWinnersName() {
         String winnersName = "";
         for (Car car : winCars)
-            winnersName += car.getName() + ", ";
-        return winnersName.substring(0, winnersName.length() - 2);
+            winnersName += car.getName() + APPEND_REGEX;
+        return winnersName.substring(0, winnersName.length() - APPEND_REGEX.length());
     }
 
 

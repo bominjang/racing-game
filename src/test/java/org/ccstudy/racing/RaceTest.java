@@ -48,5 +48,5 @@ public class RaceTest {
         for (Car car : winner)
             System.out.println(car.getName());
     }
-    
+
 }
