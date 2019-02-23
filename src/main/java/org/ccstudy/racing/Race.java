@@ -2,28 +2,31 @@ package org.ccstudy.racing;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
-//1. 주어진 횟수만큼 전진, 정지
-//2. 0~9 난수 발생으로 4이상 전진 미만 정지
-//3. 자동차 상태 출력
-//입력은 자동차 대수, 횟수
+
 public class Race {
+
+    private static final String REGEX = ",";
 
     private int times;
     private List<Car> cars;
     private List<String> status;
+    private List<Car> winCars;
 
-    public Race(final int numberOfCars, final int times) {
+    public Race(final String carNames, final int times) {
         this.times = times;
         this.status = new ArrayList<>();
         this.cars = new ArrayList<>();
-        setCars(numberOfCars);
+        this.winCars = new ArrayList<>();
+        setCars(carNames);
     }
 
     public void run() {
         for (int i = 0; i < times; i++)
             oneTime();
         addPosition();
+        setWinCars();
     }
 
     public List<String> getStatus() {
@@ -32,18 +35,43 @@ public class Race {
 
     public void addPosition() {
         for (Car car : cars)
-            status.add(car.drawPosition());
+            status.add(car.getPositionToString());
+    }
+
+    private void setWinCars() {
+        int max = cars.stream().mapToInt(car -> car.getPosition()).max().getAsInt();
+        winCars = cars.stream().filter(car -> car.getPosition() == max).collect(Collectors.toList());
+    }
+
+    public List<Car> getWinCars() {
+        return winCars;
+    }
+
+    public void result() {
+        for (Car car : winCars)
+            car.drawPosition();
+
+        System.out.println(getWinnersName() + "가 최종 우승하였습니다.");
+    }
+
+    private String getWinnersName() {
+        String winnersName = "";
+        for (Car car : winCars)
+            winnersName += car.getName() + ", ";
+        return winnersName.substring(0, winnersName.length() - 2);
     }
 
 
-    private void setCars(final int numberOfCars) {
-        for (int i = 0; i < numberOfCars; i++)
-            cars.add(new Car());
+    private void setCars(final String carNames) {
+        String[] nameArray = carNames.split(REGEX);
+        for (int i = 0; i < nameArray.length; i++)
+            cars.add(new Car(nameArray[i]));
     }
 
     private void oneTime() {
         for (Car car : cars)
             car.foward(NumberGenerator.generateRandomNumber());
     }
+
 
 }

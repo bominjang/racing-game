@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c86fef04-5dbf-456a-b143-5f5f3d5c409f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Race.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,30 +25,37 @@
     <session id="439960344">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="205" />
+          <entry key="java" value="2276" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="205" />
+          <entry key="JAVA" value="2276" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="442">
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+              <folding>
+                <element signature="e#701#702#0" expanded="true" />
+                <element signature="e#733#734#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,17 +72,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Race.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+            <state relative-caret-position="221">
+              <caret line="58" column="31" lean-forward="true" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+              <folding>
+                <element signature="e#1143#1144#0" expanded="true" />
+                <element signature="e#1173#1174#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="313">
+              <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -385,8 +395,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Race.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceTest.java" />
       </list>
     </option>
   </component>
@@ -397,9 +408,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="60" />
-    <option name="width" value="1600" />
-    <option name="height" value="980" />
+    <option name="x" value="215" />
+    <option name="y" value="50" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -512,7 +524,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550817731658" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550908073387" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DS/sketch" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -529,7 +541,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RaceTest.난수발생레이스결과">
     <configuration name="RaceTest.두칸전진차량결과확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.ccStudy.racingGame.test" />
       <extension name="coverage">
@@ -546,8 +558,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RaceTest.우승자보기" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.ccStudy.racingGame.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ccstudy.racing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ccstudy.racing" />
+      <option name="MAIN_CLASS_NAME" value="org.ccstudy.racing.RaceTest" />
+      <option name="METHOD_NAME" value="우승자보기" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RaceTest.난수발생레이스결과" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.ccStudy.racingGame.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ccstudy.racing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ccstudy.racing" />
+      <option name="MAIN_CLASS_NAME" value="org.ccstudy.racing.RaceTest" />
+      <option name="METHOD_NAME" value="난수발생레이스결과" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.RaceTest.두칸전진차량결과확인" />
+      <item itemvalue="JUnit.RaceTest.우승자보기" />
+      <item itemvalue="JUnit.RaceTest.난수발생레이스결과" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RaceTest.난수발생레이스결과" />
+        <item itemvalue="JUnit.RaceTest.우승자보기" />
         <item itemvalue="JUnit.RaceTest.두칸전진차량결과확인" />
       </list>
     </recent_temporary>
@@ -563,44 +614,45 @@
       <option name="presentableId" value="Default" />
       <updated>1550666386903</updated>
       <workItem from="1550666399196" duration="6604000" />
-      <workItem from="1550816212827" duration="1469000" />
+      <workItem from="1550816212827" duration="1921000" />
+      <workItem from="1550902057719" duration="5984000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RaceTest - 2019.02.20 at 22h 32m 52s.xml">
-      <configuration name="RaceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.20 at 22h 35m 05s.xml">
+    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.23 at 16h 15m 28s.xml">
       <configuration name="RaceTest.난수발생레이스결과" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.20 at 22h 38m 14s.xml">
+    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.23 at 16h 26m 27s.xml">
       <configuration name="RaceTest.난수발생레이스결과" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.20 at 22h 49m 14s.xml">
+    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.23 at 16h 28m 09s.xml">
       <configuration name="RaceTest.난수발생레이스결과" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.20 at 23h 00m 41s.xml">
+    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.23 at 16h 28m 19s.xml">
       <configuration name="RaceTest.난수발생레이스결과" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.20 at 23h 00m 49s.xml">
+    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.23 at 16h 28m 24s.xml">
       <configuration name="RaceTest.난수발생레이스결과" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.20 at 23h 04m 52s.xml">
+    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.23 at 16h 28m 37s.xml">
       <configuration name="RaceTest.난수발생레이스결과" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.20 at 23h 04m 57s.xml">
+    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.23 at 16h 29m 14s.xml">
       <configuration name="RaceTest.난수발생레이스결과" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.20 at 23h 12m 03s.xml">
+    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.23 at 16h 29m 30s.xml">
       <configuration name="RaceTest.난수발생레이스결과" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RaceTest_두칸전진차량결과확인 - 2019.02.22 at 15h 29m 59s.xml">
-      <configuration name="RaceTest.두칸전진차량결과확인" configurationId="JUnit" />
+    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.23 at 16h 41m 15s.xml">
+      <configuration name="RaceTest.난수발생레이스결과" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RaceTest_난수발생레이스결과 - 2019.02.23 at 16h 46m 07s.xml">
+      <configuration name="RaceTest.난수발생레이스결과" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2514000" />
+    <option name="totallyTimeSpent" value="8950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -611,7 +663,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25301206" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25635877" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -621,7 +673,7 @@
       <window_info anchor="bottom" id="Build" order="5" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.32863188" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.32863188" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -652,24 +704,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="442">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Race.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+        <state relative-caret-position="221">
+          <caret line="58" column="31" lean-forward="true" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+          <folding>
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        <state relative-caret-position="313">
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
         </state>
       </provider>
     </entry>

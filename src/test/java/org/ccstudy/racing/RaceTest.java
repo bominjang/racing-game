@@ -13,12 +13,12 @@ public class RaceTest {
 
     Race race;
     List<String> expect;
-    int NUMBER_OF_CARS = 3;
+    String CAR_NAMES = "pci,kms,yh";
     int TIMES = 5;
 
     @Before
     public void setUp() throws Exception {
-        race = new Race(NUMBER_OF_CARS, TIMES);
+        race = new Race(CAR_NAMES, TIMES);
         expect = new ArrayList<>();
     }
 
@@ -30,16 +30,23 @@ public class RaceTest {
     @Test
     public void 난수발생레이스결과() {
         race.run();
-        assertEquals(expect, race.getStatus());
+
+        race.result();
     }
 
     @Test
-    public void 두칸전진차량결과확인() {
-        Car car = new Car();
-        car.foward(5);
-        car.foward(5);
-        assertEquals(2, car.getPosition());
-
-        assertEquals("---", car.drawPosition());
+    public void 전진() {
+        Car car = new Car("pci");
+        car.foward(4);
+        assertEquals(1, car.getPosition());
     }
+
+    @Test
+    public void 우승자보기() {
+        race.run();
+        List<Car> winner = race.getWinCars();
+        for (Car car : winner)
+            System.out.println(car.getName());
+    }
+    
 }
