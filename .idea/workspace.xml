@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c86fef04-5dbf-456a-b143-5f5f3d5c409f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/RaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ccstudy/racing/RaceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceServiceTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="c86fef04-5dbf-456a-b143-5f5f3d5c409f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -49,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="527">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
               <folding>
                 <element signature="e#701#702#0" expanded="true" />
                 <element signature="e#733#734#0" expanded="true" />
@@ -73,7 +69,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/ccstudy/racing/RaceService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="109">
               <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
             </state>
           </provider>
@@ -82,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+            <state relative-caret-position="170">
+              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
               <folding>
                 <element signature="e#612#613#0" expanded="true" />
                 <element signature="e#648#649#0" expanded="true" />
@@ -527,7 +523,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550941264558" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550941501599" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DS/sketch" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -619,14 +615,11 @@
       <updated>1550666386903</updated>
       <workItem from="1550666399196" duration="6604000" />
       <workItem from="1550816212827" duration="1921000" />
-      <workItem from="1550902057719" duration="11135000" />
+      <workItem from="1550902057719" duration="11392000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 01h 19m 52s.xml">
-      <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 01h 19m 56s.xml">
       <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
     </history-entry>
@@ -654,9 +647,12 @@
     <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 02h 00m 17s.xml">
       <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RaceServiceTest_난수발생레이스결과 - 2019.02.24 at 02h 02m 54s.xml">
+      <configuration name="RaceServiceTest.난수발생레이스결과" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14101000" />
+    <option name="totallyTimeSpent" value="14358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -710,8 +706,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/ccstudy/racing/RaceServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+        <state relative-caret-position="170">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
           <folding>
             <element signature="e#612#613#0" expanded="true" />
             <element signature="e#648#649#0" expanded="true" />
@@ -721,8 +717,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ccstudy/racing/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="527">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
           <folding>
             <element signature="e#701#702#0" expanded="true" />
             <element signature="e#733#734#0" expanded="true" />
@@ -734,7 +730,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ccstudy/racing/RaceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="109">
           <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
         </state>
       </provider>
