@@ -11,7 +11,7 @@ public class CarTest {
     @Test
     public void 다섯번_시도_결과() {
         //given
-        Car car = new Car();
+        Car car = new Car("유성");
         int numberOfAttempt = 5;
 
         //when
