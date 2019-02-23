@@ -7,31 +7,29 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-public class RaceTest {
+public class RaceServiceTest {
 
-    Race race;
+    RaceService raceService;
     List<String> expect;
     String CAR_NAMES = "pci,kms,yh";
     int TIMES = 5;
 
     @Before
     public void setUp() throws Exception {
-        race = new Race(CAR_NAMES, TIMES);
+        raceService = new RaceService();
         expect = new ArrayList<>();
     }
 
     @After
     public void tearDown() throws Exception {
-        race = null;
+        raceService = null;
     }
 
     @Test
     public void 난수발생레이스결과() {
-        race.run();
-
-        race.result();
+        raceService.run(CAR_NAMES, TIMES);
     }
 
     @Test
@@ -41,12 +39,5 @@ public class RaceTest {
         assertEquals(1, car.getPosition());
     }
 
-    @Test
-    public void 우승자보기() {
-        race.run();
-        List<Car> winner = race.getWinCars();
-        for (Car car : winner)
-            System.out.println(car.getName());
-    }
 
 }
