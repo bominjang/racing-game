@@ -13,17 +13,17 @@ public class RacingCarServiceTest {
     public void start() {
         RacingCarService racingCarService = new RacingCarService();
 
-        List<Car> cars = racingCarService.race(5, 5);
+        List<Car> cars = racingCarService.race(new String[]{"aa","bb","cc","dd","ee"}, 5);
 
         assertEquals(cars.size(), 5);
         cars.forEach(this::check);
     }
 
     private void check(Car car) {
-        assertTrue(checkLength(car.converter()));
+        assertTrue(checkLength(car.getLocation()));
     }
 
-    private boolean checkLength(String convert) {
-        return convert.length() < 6 && convert.length() >= 0;
+    private boolean checkLength(int location) {
+        return location < 6 && location >= 0;
     }
 }

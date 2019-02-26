@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RacingCarService {
-    public List<Car> race(int countOfCar, int numberOfAttempt) {
+    public List<Car> race(String[] names, int numberOfAttempt) {
         List<Car> cars = new ArrayList<>();
 
-        for (int i = 0 ; i < countOfCar ; i ++){
-            cars.add(new Car());
+        for(String name : names){
+            cars.add(new Car(name));
         }
-
+        
         cars.forEach(car -> car.attemptToMove(new RandomNumberGenerator().generateNumber(numberOfAttempt)));
         return cars;
     }

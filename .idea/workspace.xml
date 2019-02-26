@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7148b254-ca39-4fca-bf07-3cbb7a16dea9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/model/CarResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingCarControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/model/CarResultTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/ccstudy/racing/RacingCarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/ccstudy/racing/RacingCarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/ccstudy/racing/RacingCarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/ccstudy/racing/RacingCarService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/ccstudy/racing/common/RacingResultConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/ccstudy/racing/model/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/ccstudy/racing/model/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/ccstudy/racing/CarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/ccstudy/racing/CarTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/ccstudy/racing/RacingCarServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/ccstudy/racing/RacingCarServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/ccstudy/racing/RacingResultConverterTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingCarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingCarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingCarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingCarService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/model/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/CarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/CarTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingCarServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingCarServiceTest.java" afterDir="false" />
@@ -22,6 +31,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/racingGame$RacingCarControllerTest_.ic" NAME="RacingCarControllerTest.게임테스트 Coverage Results" MODIFIED="1551167883900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ccstudy.racing.*</FILTER>
+    </SUITE>
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -31,33 +45,36 @@
     <session id="-190326078">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="2" />
-          <entry key="java" value="47" />
+          <entry key="java" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="47" />
+          <entry key="JAVA" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3296" />
+          <entry key="java" value="5040" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3296" />
+          <entry key="JAVA" value="5040" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -74,109 +91,51 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/model/Car.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/model/CarResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingCarService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="48" lean-forward="true" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+            <state relative-caret-position="30">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#150#151#0" expanded="true" />
+                <element signature="e#182#183#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingCarController.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingCarControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/CarTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingCarServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-              <folding>
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-                <element signature="e#610#611#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingResultConverterTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/CarTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="165">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/RacingResultConverter.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/model/CarResultTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/RandomNumberGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/NumberGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/FixedNumberGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -187,8 +146,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -656,17 +615,19 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingResultPrinterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingResultPrinter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingResultConverter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingCarControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/InputDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/RandomNumberGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/NumberGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/FixedNumberGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingCarService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingResultConverterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/model/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingCarController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingCarServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingCarService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/CarTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingCarController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingCarControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/model/CarResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/FixedNumberGenerator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/model/CarResultTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingCarServiceTest.java" />
       </list>
     </option>
   </component>
@@ -676,7 +637,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="812" />
@@ -686,7 +647,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -764,12 +724,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550476819741" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551169811062" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -777,9 +738,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ccstudy.racing.model" />
       <recent name="com.ccstudy.racing" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -799,6 +762,22 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.RacingCarServiceTest.start">
+    <configuration name="CarResultTest.경주_결과_테스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="racingGame_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ccstudy.racing.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ccstudy.racing.model" />
+      <option name="MAIN_CLASS_NAME" value="com.ccstudy.racing.model.CarResultTest" />
+      <option name="METHOD_NAME" value="경주_결과_테스트" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CarTest.다섯번_시도_결과" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="racingGame_test" />
       <extension name="coverage">
@@ -815,23 +794,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarTest.race" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="racingGame_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ccstudy.racing.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ccstudy.racing" />
-      <option name="MAIN_CLASS_NAME" value="com.ccstudy.racing.CarTest" />
-      <option name="METHOD_NAME" value="race" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RacingCarServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarTest.일곱번_시도했을때_4칸전진" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="racingGame_test" />
       <extension name="coverage">
         <pattern>
@@ -840,7 +803,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ccstudy.racing" />
-      <option name="MAIN_CLASS_NAME" value="com.ccstudy.racing.RacingCarServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ccstudy.racing.CarTest" />
+      <option name="METHOD_NAME" value="일곱번_시도했을때_4칸전진" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RacingCarControllerTest.게임테스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="racingGame_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ccstudy.racing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ccstudy.racing" />
+      <option name="MAIN_CLASS_NAME" value="com.ccstudy.racing.RacingCarControllerTest" />
+      <option name="METHOD_NAME" value="게임테스트" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -861,36 +842,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RacingResultConverterTest.다섯칸_움직였을때_결과확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="racingGame_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ccstudy.racing.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ccstudy.racing" />
-      <option name="MAIN_CLASS_NAME" value="com.ccstudy.racing.RacingResultConverterTest" />
-      <option name="METHOD_NAME" value="다섯칸_움직였을때_결과확인" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.CarTest.race" />
-      <item itemvalue="JUnit.RacingResultConverterTest.다섯칸_움직였을때_결과확인" />
       <item itemvalue="JUnit.RacingCarServiceTest.start" />
-      <item itemvalue="JUnit.RacingCarServiceTest" />
       <item itemvalue="JUnit.CarTest.다섯번_시도_결과" />
+      <item itemvalue="JUnit.CarTest.일곱번_시도했을때_4칸전진" />
+      <item itemvalue="JUnit.RacingCarControllerTest.게임테스트" />
+      <item itemvalue="JUnit.CarResultTest.경주_결과_테스트" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RacingCarServiceTest.start" />
+        <item itemvalue="JUnit.CarResultTest.경주_결과_테스트" />
+        <item itemvalue="JUnit.RacingCarControllerTest.게임테스트" />
+        <item itemvalue="JUnit.CarTest.일곱번_시도했을때_4칸전진" />
         <item itemvalue="JUnit.CarTest.다섯번_시도_결과" />
-        <item itemvalue="JUnit.RacingCarServiceTest" />
-        <item itemvalue="JUnit.RacingResultConverterTest.다섯칸_움직였을때_결과확인" />
-        <item itemvalue="JUnit.CarTest.race" />
       </list>
     </recent_temporary>
   </component>
@@ -906,44 +871,48 @@
       <updated>1550296368831</updated>
       <workItem from="1550296370502" duration="8503000" />
       <workItem from="1550474661673" duration="191000" />
-      <workItem from="1550476369499" duration="444000" />
+      <workItem from="1550476369499" duration="732000" />
+      <workItem from="1550821505767" duration="589000" />
+      <workItem from="1550824056522" duration="280000" />
+      <workItem from="1550824445161" duration="209000" />
+      <workItem from="1551161234924" duration="7768000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RacingCarServiceTest_start - 2019.02.16 at 16h 10m 39s.xml">
-      <configuration name="RacingCarServiceTest.start" configurationId="JUnit" />
+    <history-entry file="RacingCarControllerTest_게임테스트 - 2019.02.26 at 17h 17m 34s.xml">
+      <configuration name="RacingCarControllerTest.게임테스트" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RacingCarServiceTest_start - 2019.02.16 at 16h 14m 29s.xml">
-      <configuration name="RacingCarServiceTest.start" configurationId="JUnit" />
+    <history-entry file="RacingCarControllerTest_게임테스트 - 2019.02.26 at 17h 17m 37s.xml">
+      <configuration name="RacingCarControllerTest.게임테스트" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RacingCarServiceTest - 2019.02.16 at 16h 27m 12s.xml">
-      <configuration name="RacingCarServiceTest" configurationId="JUnit" />
+    <history-entry file="RacingCarControllerTest_게임테스트 - 2019.02.26 at 17h 17m 40s.xml">
+      <configuration name="RacingCarControllerTest.게임테스트" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RacingCarServiceTest - 2019.02.16 at 16h 27m 32s.xml">
-      <configuration name="RacingCarServiceTest" configurationId="JUnit" />
+    <history-entry file="CarResultTest_경주_결과_테스트 - 2019.02.26 at 17h 25m 31s.xml">
+      <configuration name="CarResultTest.경주_결과_테스트" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RacingResultConverterTest_다섯칸_움직였을때_결과확인 - 2019.02.16 at 16h 51m 31s.xml">
-      <configuration name="RacingResultConverterTest.다섯칸_움직였을때_결과확인" configurationId="JUnit" />
+    <history-entry file="CarResultTest_경주_결과_테스트 - 2019.02.26 at 17h 26m 19s.xml">
+      <configuration name="CarResultTest.경주_결과_테스트" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RacingResultConverterTest_다섯칸_움직였을때_결과확인 - 2019.02.16 at 16h 51m 45s.xml">
-      <configuration name="RacingResultConverterTest.다섯칸_움직였을때_결과확인" configurationId="JUnit" />
+    <history-entry file="RacingCarControllerTest_게임테스트 - 2019.02.26 at 17h 27m 30s.xml">
+      <configuration name="RacingCarControllerTest.게임테스트" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RacingResultConverterTest_다섯칸_움직였을때_결과확인 - 2019.02.16 at 16h 51m 58s.xml">
-      <configuration name="RacingResultConverterTest.다섯칸_움직였을때_결과확인" configurationId="JUnit" />
+    <history-entry file="RacingCarControllerTest_게임테스트 - 2019.02.26 at 17h 27m 34s.xml">
+      <configuration name="RacingCarControllerTest.게임테스트" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RacingCarServiceTest - 2019.02.16 at 16h 53m 39s.xml">
-      <configuration name="RacingCarServiceTest" configurationId="JUnit" />
+    <history-entry file="RacingCarControllerTest_게임테스트 - 2019.02.26 at 17h 27m 38s.xml">
+      <configuration name="RacingCarControllerTest.게임테스트" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarTest_다섯번_시도_결과 - 2019.02.18 at 16h 57m 15s.xml">
-      <configuration name="CarTest.다섯번_시도_결과" configurationId="JUnit" />
+    <history-entry file="CarResultTest_경주_결과_테스트 - 2019.02.26 at 17h 28m 09s.xml">
+      <configuration name="CarResultTest.경주_결과_테스트" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RacingCarServiceTest_start - 2019.02.18 at 16h 58m 43s.xml">
-      <configuration name="RacingCarServiceTest.start" configurationId="JUnit" />
+    <history-entry file="CarResultTest_경주_결과_테스트 - 2019.02.26 at 17h 28m 29s.xml">
+      <configuration name="CarResultTest.경주_결과_테스트" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10591000" />
+    <option name="totallyTimeSpent" value="19725000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -955,29 +924,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="812" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49896482" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49722221" visible="true" weight="0.2746781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" sideWeight="0.5010352" side_tool="true" weight="0.24964234" />
+      <window_info id="Favorites" order="4" sideWeight="0.50277776" side_tool="true" weight="0.26752505" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.49928468" visible="true" weight="0.32916668" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32916668" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49928468" weight="0.32916668" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928367" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32916668" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32916668" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32916668" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.32916668" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007163" side_tool="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32916668" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -988,6 +958,7 @@
       <window_info anchor="right" id="Gradle" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Key Promoter X" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1010,52 +981,65 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingScanner.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/InputDto.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RandomNumberGeneratorTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingCarControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/model/Car.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingResultConverterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/RacingResultConverter.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="320">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingCarController.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/NumberGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/FixedNumberGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/RacingResultConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="231">
+          <caret line="237" column="12" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/RandomNumberGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/NumberGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/model/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingCarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/common/FixedNumberGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1064,45 +1048,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/RacingCarService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="48" lean-forward="true" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccstudy/racing/model/CarResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingCarServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="30">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding>
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#150#151#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingResultConverterTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingCarControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="120">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/model/CarResultTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/CarTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        <state relative-caret-position="165">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ccstudy/racing/RacingCarServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
         </state>
       </provider>
     </entry>
