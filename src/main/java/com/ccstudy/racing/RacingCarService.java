@@ -5,16 +5,20 @@ import com.ccstudy.racing.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class RacingCarService {
-    public List<Car> race(int countOfCar, int numberOfAttempt) {
+    public List<Car> race(String[] names, int numberOfAttempt) {
         List<Car> cars = new ArrayList<>();
 
-        for (int i = 0 ; i < countOfCar ; i ++){
-            cars.add(new Car());
+        for (String name : names) {
+            cars.add(new Car(name));
         }
 
-        cars.forEach(car -> car.attemptToMove(new RandomNumberGenerator().generateNumber(numberOfAttempt)));
-        return cars;
+        List<Integer> randomNumbers = new RandomNumberGenerator().generateNumber(numberOfAttempt);
+
+        return cars.stream()
+                .map(car -> car.attemptToMove(randomNumbers))
+                .collect(Collectors.toList());
     }
 }

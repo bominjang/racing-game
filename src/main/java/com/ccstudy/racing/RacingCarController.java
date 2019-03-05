@@ -1,6 +1,6 @@
 package com.ccstudy.racing;
 
-import com.ccstudy.racing.common.RacingResultConverter;
+import com.ccstudy.racing.dto.CarCollectionDto;
 import com.ccstudy.racing.model.Car;
 
 import java.util.List;
@@ -17,13 +17,19 @@ public class RacingCarController {
 
     public void startGame() {
         Scanner scanner = new Scanner(System.in);
-        int countOfCar = scanner.nextInt();
+        String[] names = scanner.nextLine().split(",");
         int numberOfAttempt = scanner.nextInt();
-        List<Car> cars = racingCarService.race(countOfCar, numberOfAttempt);
+        List<Car> cars = racingCarService.race(names, numberOfAttempt);
 
-        for (Car car : cars) {
-            System.out.println(RacingResultConverter.convert(car));
-        }
+        printResult(cars);
     }
 
+    private void printResult(List<Car> cars) {
+        for (Car car : cars) {
+            System.out.println(car.convertLocation());
+        }
+
+        CarCollectionDto carCollectionDto = new CarCollectionDto(cars);
+        System.out.println(carCollectionDto.getWinners() + "가 최종 우승했습니다.");
+    }
 }

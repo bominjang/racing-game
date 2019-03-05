@@ -5,7 +5,8 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 public class RacingCarServiceTest {
 
@@ -13,14 +14,14 @@ public class RacingCarServiceTest {
     public void start() {
         RacingCarService racingCarService = new RacingCarService();
 
-        List<Car> cars = racingCarService.race(5, 5);
+        List<Car> cars = racingCarService.race(new String[]{"유성","수정","동규","예은","찬인"}, 5);
 
-        assertEquals(cars.size(), 5);
+        assertThat(cars.size()).isEqualTo(5);
         cars.forEach(this::check);
     }
 
     private void check(Car car) {
-        assertTrue(checkNumber(car.getLocation()));
+        assertThat(checkNumber(car.getLocation())).isTrue();
     }
 
     private boolean checkNumber(int number) {
