@@ -1,21 +1,20 @@
-import model.RacingGameInfo;
+import dto.RacingGameInfo;
+import model.Attendee;
 import service.RacingGameService;
 import ui.InputView;
+import ui.OutputView;
 
 public class GameScenario {
-
-    private final static int MOVE_CONDITION =4;//전진조건 설정
 
     public void racingGame(){
         RacingGameService racingGameService = new RacingGameService(makeRacingGameInfo());
         racingGameService.startGame();
-        racingGameService.printResult();
+        OutputView.printResult(racingGameService.getAttendee());
     }
 
-    public RacingGameInfo makeRacingGameInfo(){
-        InputView inputView = new InputView();
-        int numberOfCars = inputView.askNumberOfCars();
-        int countOfAttempt = inputView.askCountOfAttempt();
-        return new RacingGameInfo(MOVE_CONDITION , countOfAttempt, numberOfCars);
+    private RacingGameInfo makeRacingGameInfo(){
+        RacingGameInfo racingGameInfo = new RacingGameInfo();
+        InputView.askRacingGameInfo(racingGameInfo);
+        return racingGameInfo;
     }
 }

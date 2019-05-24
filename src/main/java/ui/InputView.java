@@ -1,15 +1,24 @@
 package ui;
 
+import dto.RacingGameInfo;
+
 import java.util.Scanner;
 
 public class InputView {
 
-    public int askNumberOfCars(){
+    private static final int MOVE_CONDITION =4;//전진조건 설정
+
+    public static void askRacingGameInfo(RacingGameInfo racingGameInfo){
+        racingGameInfo.setRacingGameInfo(askCountOfAttempt(), MOVE_CONDITION, askNumberOfCars());
+
+    }
+
+    private static int askNumberOfCars(){
         System.out.println("자동차 대수는 몇 대 인가요?");
         return new Scanner(System.in).nextInt();
     }
 
-    public int askCountOfAttempt(){
+    private static int askCountOfAttempt(){
         System.out.println("시도할 횟수는 몇 회 인가요?");
         return new Scanner(System.in).nextInt();
     }
