@@ -1,10 +1,10 @@
 package ui;
 
-import model.Attendee;
+import model.AttendeeGroup;
 
 public class OutputView {
 
-    public static void printResult(Attendee attendee){
+    public static void printResult(AttendeeGroup attendee){
         attendee.getCars().forEach(car -> System.out.println(drawTrack(car.getPosition())));
     }
 

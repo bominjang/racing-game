@@ -5,11 +5,12 @@ public class Car {
     private int position;
 
     public int getPosition() {
-        return position;
+        return this.position;
     }
 
-    public void move(){
+    public int move(){
         position++;
+        return this.position;
     }
 
 }

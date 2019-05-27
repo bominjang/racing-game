@@ -3,19 +3,19 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Attendee {
+public class AttendeeGroup {
 
     private List<Car> cars = new ArrayList<>();
 
-    public Attendee(int numberOfCars) {
-        makeCars(numberOfCars);
+    public AttendeeGroup(int numberOfCars) {
+        addCars(numberOfCars);
     }
 
     public List<Car> getCars() {
         return cars;
     }
 
-    private void makeCars(int numberOfCars){
+    private void addCars(int numberOfCars){
         for(int i=0; i<numberOfCars; i++) {
             cars.add(new Car());
         }

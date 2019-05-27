@@ -8,8 +8,8 @@ public class InputView {
 
     private static final int MOVE_CONDITION =4;//전진조건 설정
 
-    public static void askRacingGameInfo(RacingGameInfo racingGameInfo){
-        racingGameInfo.setRacingGameInfo(askCountOfAttempt(), MOVE_CONDITION, askNumberOfCars());
+    public static RacingGameInfo askRacingGameInfo(){
+        return new RacingGameInfo(askCountOfAttempt(), MOVE_CONDITION, askNumberOfCars());
 
     }
 

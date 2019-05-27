@@ -1,5 +1,4 @@
 import dto.RacingGameInfo;
-import model.Attendee;
 import service.RacingGameService;
 import ui.InputView;
 import ui.OutputView;
@@ -13,8 +12,6 @@ public class GameScenario {
     }
 
     private RacingGameInfo makeRacingGameInfo(){
-        RacingGameInfo racingGameInfo = new RacingGameInfo();
-        InputView.askRacingGameInfo(racingGameInfo);
-        return racingGameInfo;
+        return InputView.askRacingGameInfo();
     }
 }
