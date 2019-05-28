@@ -1,5 +1,6 @@
 package model;
 
+import dto.RacingGameInfo;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,7 +9,7 @@ import static org.junit.Assert.*;
 
 public class RacingGameInfoTest {
 
-    private  RacingGameInfo racingGameInfo;
+    private RacingGameInfo racingGameInfo;
 
     @Before
     public void setUp() throws Exception {

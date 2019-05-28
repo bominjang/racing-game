@@ -8,14 +8,14 @@ public class Attendee {
     private List<Car> cars = new ArrayList<>();
 
     public Attendee(int numberOfCars) {
-        makeCars(numberOfCars);
+        addCars(numberOfCars);
     }
 
     public List<Car> getCars() {
         return cars;
     }
 
-    private void makeCars(int numberOfCars){
+    private void addCars(int numberOfCars){
         for(int i=0; i<numberOfCars; i++) {
             cars.add(new Car());
         }

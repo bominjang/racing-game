@@ -39,6 +39,6 @@ public class RacingGameService {
         return this.attendee;
     }
 
-
+    //return 값 void 지양
 
 }

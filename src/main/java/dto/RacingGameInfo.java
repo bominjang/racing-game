@@ -24,4 +24,7 @@ public class RacingGameInfo {
         this.numberOfCars=numberOfCars;
     }
 
+    //dto
+    //생성자로 고치기
+    //validation
 }
