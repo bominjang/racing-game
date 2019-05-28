@@ -8,14 +8,14 @@ public class InputView {
 
     private static final int MOVE_CONDITION =4;//전진조건 설정
 
-    public static void askRacingGameInfo(RacingGameInfo racingGameInfo){
-        racingGameInfo.setRacingGameInfo(askCountOfAttempt(), MOVE_CONDITION, askNumberOfCars());
+    public static RacingGameInfo askRacingGameInfo(){
+        return new RacingGameInfo(askCountOfAttempt(), MOVE_CONDITION, askRacingAttendeeList());
 
     }
 
-    private static int askNumberOfCars(){
-        System.out.println("자동차 대수는 몇 대 인가요?");
-        return new Scanner(System.in).nextInt();
+    private static String askRacingAttendeeList(){
+        System.out.println("경주 할 자동차 이름을 입력하세요");
+        return new Scanner(System.in).nextLine();
     }
 
     private static int askCountOfAttempt(){
