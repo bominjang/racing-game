@@ -5,19 +5,23 @@ import model.Car;
 import dto.RacingGameInfo;
 import util.ExtractRandom;
 
+import java.util.Comparator;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
 public class RacingGameService {
 
     private RacingGameInfo racingGameInfo;
-    private AttendeeGroup attendee;
+    private AttendeeGroup attendeeGroup;
 
     public RacingGameService(RacingGameInfo racingGameInfo) {
         this.racingGameInfo = racingGameInfo;
-        this.attendee  = new AttendeeGroup(racingGameInfo.getNumberOfCars());
+        this.attendeeGroup = new AttendeeGroup(racingGameInfo.getAttendeeList());
     }
 
     public void startGame(){
         int numberOfGames=racingGameInfo.getCountOfAttempt();
-        for(Car car :attendee.getCars()){
+        for(Car car : attendeeGroup.getCars()){
              racing(car, numberOfGames);
         }
     }
@@ -35,10 +39,13 @@ public class RacingGameService {
         }
     }
 
-    public AttendeeGroup getAttendee(){
-        return this.attendee;
+    public AttendeeGroup getAttendeeGroup(){
+        return this.attendeeGroup;
     }
 
-
+    public Car getWinner(){
+        //TODO: 정렬구현
+        return attendeeGroup.getCars().get(0);
+    }
 
 }

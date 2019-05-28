@@ -4,13 +4,17 @@ public class RacingGameInfo {
 
     private int conditionToMove;//전진조건
     private int numberOfAttempt;//도전횟수
-    private int numberOfCars;
 
-    public RacingGameInfo(int conditionToMove, int numberOfAttempt, int numberOfCars) {
-        if(!checkInputValue(conditionToMove, numberOfAttempt, numberOfCars))
+    private String attendeeList;
+
+    public RacingGameInfo(int conditionToMove, int numberOfAttempt, String attendeeList) {
+        if(!checkInputValue(conditionToMove, numberOfAttempt, attendeeList)){
+            System.out.println("잘못된 입력입니다.");
+            return;
+        }
         this.conditionToMove = conditionToMove;
         this.numberOfAttempt = numberOfAttempt;
-        this.numberOfCars = numberOfCars;
+        this.attendeeList = attendeeList;
     }
 
     public int getCountOfAttempt() {
@@ -21,20 +25,15 @@ public class RacingGameInfo {
         return this.conditionToMove;
     }
 
-    public int getNumberOfCars(){
-        return this.numberOfCars;
+    public String getAttendeeList() {
+        return attendeeList;
     }
 
-    private boolean checkInputValue(int conditionToMove, int numberOfAttempt, int numberOfCars){
-        if(conditionToMove < 0){
+    private boolean checkInputValue(int conditionToMove, int numberOfAttempt, String attendeeList){
+        if(conditionToMove < 0 || numberOfAttempt < 0){
             return false;
         }
-        if(numberOfAttempt < 0 ){
-            return false;
-        }
-        if(numberOfCars < 0 ){
-            return false;
-        }
+        //String에 대한 validation 생각해 볼 것
         return true;
     }
 }

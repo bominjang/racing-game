@@ -7,17 +7,19 @@ public class AttendeeGroup {
 
     private List<Car> cars = new ArrayList<>();
 
-    public AttendeeGroup(int numberOfCars) {
-        addCars(numberOfCars);
+    public AttendeeGroup(String attendeeList) {
+        addCars(attendeeList.split(","));
     }
 
     public List<Car> getCars() {
         return cars;
     }
 
-    private void addCars(int numberOfCars){
-        for(int i=0; i<numberOfCars; i++) {
-            cars.add(new Car());
+    private List<Car> addCars(String[] attendeeList){
+        for(int i=0; i<attendeeList.length; i++) {
+            cars.add(new Car(attendeeList[i]));
         }
+        return cars;
     }
+
 }

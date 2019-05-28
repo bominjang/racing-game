@@ -8,7 +8,8 @@ public class GameScenario {
     public void racingGame(){
         RacingGameService racingGameService = new RacingGameService(makeRacingGameInfo());
         racingGameService.startGame();
-        OutputView.printResult(racingGameService.getAttendee());
+        OutputView.printTrack(racingGameService.getAttendeeGroup());
+        OutputView.printWinner(racingGameService.getWinner());
     }
 
     private RacingGameInfo makeRacingGameInfo(){
