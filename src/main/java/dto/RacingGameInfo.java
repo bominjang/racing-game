@@ -8,10 +8,7 @@ public class RacingGameInfo {
     private String attendeeList;
 
     public RacingGameInfo(int conditionToMove, int numberOfAttempt, String attendeeList) {
-        if(!checkInputValue(conditionToMove, numberOfAttempt)){
-            System.out.println("잘못된 입력입니다.");
-            return;
-        }
+        checkInputValue(conditionToMove, numberOfAttempt);
         this.conditionToMove = conditionToMove;
         this.numberOfAttempt = numberOfAttempt;
         this.attendeeList = attendeeList;
