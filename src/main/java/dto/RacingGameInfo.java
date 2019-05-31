@@ -31,7 +31,7 @@ public class RacingGameInfo {
 
     private boolean checkInputValue(int conditionToMove, int numberOfAttempt){
         if(conditionToMove < 0 || numberOfAttempt < 0){
-            return false;
+            throw new IllegalArgumentException();
         }
         return true;
     }
