@@ -1,15 +1,18 @@
 package ui;
 
-import model.AttendeeGroup;
+import model.RacingGameAttendeeGroup;
 import model.Car;
+import service.RacingGameMatchResult;
 
 public class OutputView {
 
-    public static void printTrack(AttendeeGroup attendee){
+    public static void printTrack(RacingGameAttendeeGroup attendee){
         attendee.getCars().forEach(car -> System.out.println(car.getName()+":"+drawTrack(car.getPosition())));
     }
 
-    public static void printWinner(Car car){
+    public static void printWinner(RacingGameAttendeeGroup attendee){
+        RacingGameMatchResult racingGameMatchResult = new RacingGameMatchResult();
+        Car car = racingGameMatchResult.getWinner(attendee);
         System.out.println("우승자는: " + car.getName() + "입니다.");
     }
 

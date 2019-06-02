@@ -14,7 +14,7 @@ public class RacingGameInfo {
         this.attendeeList = attendeeList;
     }
 
-    public int getCountOfAttempt() {
+    public int getNumberOfAttempt() {
         return this.numberOfAttempt;
     }
 
