@@ -1,9 +1,13 @@
 package model;
 
+import dto.RacingGameInfo;
 import util.ExtractRandom;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static java.util.Comparator.comparing;
+import static java.util.stream.Collectors.toList;
 
 public class RacingGameAttendeeGroup {
 
@@ -24,11 +28,10 @@ public class RacingGameAttendeeGroup {
         return this.cars;
     }
 
-    public void racing(int numberOfGames, int conditionToMove){
+    public void racing(RacingGameInfo racingGameInfo){
         for(Car car: cars){
-            attemptMoving(car, numberOfGames, conditionToMove);
+            attemptMoving(car, racingGameInfo.getNumberOfAttempt(), racingGameInfo.getConditionToMove());
         }
-
     }
 
     private void attemptMoving(Car car, int numberOfGames, int conditionToMove){
@@ -42,6 +45,13 @@ public class RacingGameAttendeeGroup {
             car.move();
     }
 
+
+    public Car getWinner(){
+       this.cars.stream()
+                .sorted(comparing(Car::getPosition).reversed())
+                .collect(toList());
+        return cars.get(0);
+    }
 
 
 }

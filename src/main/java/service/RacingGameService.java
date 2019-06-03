@@ -21,7 +21,7 @@ public class RacingGameService {
     }
 
     public void startGame(){
-        racingGameAttendeeGroup.racing(racingGameInfo.getNumberOfAttempt(), racingGameInfo.getConditionToMove());
+        racingGameAttendeeGroup.racing(racingGameInfo);
     }
 
     public RacingGameAttendeeGroup getRacingGameAttendeeGroup(){

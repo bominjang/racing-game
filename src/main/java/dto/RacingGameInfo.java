@@ -4,8 +4,7 @@ public class RacingGameInfo {
 
     private int conditionToMove;//전진조건
     private int numberOfAttempt;//도전횟수
-
-    private String attendeeList;
+    private String attendeeList;//참가자리스트
 
     public RacingGameInfo(int conditionToMove, int numberOfAttempt, String attendeeList) {
         checkInputValue(conditionToMove, numberOfAttempt);
