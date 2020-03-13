@@ -56,15 +56,25 @@ jacocoTestCoverageVerification {
             element = 'CLASS'
 
             limit {
-                counter = 'LINE'
+                counter = 'INSTRUCTION'
                 value = 'COVEREDRATIO'
-                minimum = 0.70
+                minimum = 0.60
             }
 
-//            excludes = [
-//                    '*.테스트검증대상에서 제외시킬 클래스 이름*',
-//                    '*.테스트검증대상에서 제외시킬 클래스 이름*'
-//            ]
+            excludes = [
+                    '*.view.*',
+                    '*.테스트검증대상에서 제외시킬 클래스 이름*'
+            ]
+        }
+
+        rule {
+            element = 'METHOD'
+
+            limit {
+                counter = 'LINE'
+                value = 'TOTALCOUNT'
+                maximum = 12
+            }
         }
 
     }
