@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/github/Java-Bom/java-racingcar.svg)](https://travis-ci.org/github/Java-Bom/java-racingcar)
