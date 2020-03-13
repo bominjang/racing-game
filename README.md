@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/github/Java-Bom/java-racingcar.svg)](https://travis-ci.org/github/Java-Bom/java-racingcar)
+[![Build Status](https://travis-ci.org/Java-Bom/racing-game.svg?branch=master)](https://travis-ci.org/Java-Bom/racing-game)
