@@ -1,14 +1,15 @@
-package racing.view;
+package racing.domain;
 
-import jdk.internal.util.xml.impl.Input;
+import racing.view.InputScanner;
 
 public class RacingApplication {
-    public static int numberOfCar;
-    public static int numberOfChallenge;
+    private static int numberOfCar;
+    private static int numberOfChallenge;
 
     public static void main(String[] args) {
         numberOfCar = InputScanner.getNumberOfCar();
         numberOfChallenge = InputScanner.getNumberOfChallenge();
         RacingGame racingGame = new RacingGame(numberOfCar, numberOfChallenge);
+        racingGame.move();
     }
 }
